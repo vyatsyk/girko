@@ -1,99 +1,118 @@
 body {
-	background-color: #f4f4f4;
+	background: #e3e3e3 url(../images/bg.png) repeat;
+	font-family: arial, tahoma;
 }
 header {
-	position: fixed;
-	z-index: 100;
-	width: 100%;
-	padding: 0 15px 0 0;
-	background-color: rgba(255,255,152,.95);
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+	background: #7C2A90;
 	box-shadow: 0 1px 3px rgba(0,0,0,.5);
-	height: 50px;
+		-moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+		-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);	
+	height: 50px;		
+	padding: 0 15px 0 0;	
+	position: fixed;
 	text-shadow: 0 1px #ffffff;
-	background-color: #634AA0;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f8f8f8));
-	background-image: -webkit-linear-gradient(top, #ffffff, #f8f8f8);
-	background-image: -moz-linear-gradient(top, #ffffff, #f8f8f8);
-	background-image: -ms-linear-gradient(top, #ffffff, #f8f8f8);
-	background-image: -o-linear-gradient(top, #ffffff, #f8f8f8);
-	background-image: linear-gradient(top, #ffffff, #f8f8f8);
-	background-image: url(../girko-net-menu.png);
-	opacity: 0.98;
+	width: 100%;	
+	z-index: 100;	
 }
-#main {
-	padding: 80px 0 30px 0;
+
+header .logo {
+	background: url(../images/logo.png) no-repeat;
+	display: block;
+	height: 26px;
+	position: absolute;
+	left: 8%;
+	top: 12px;
+	width: 150px;
+}
+
+#content {
+	padding-top: 50px;
+}
+
+#content h1 {
+	color: #333;
+	font-size: 32px;
+	font-weight: normal;
+	text-align: center;
+	margin: 25px 20px 10px 20px;
 }
 
 
-/*
- * Grid container
- */
-#tiles {
-list-style-type: none;
-position: relative; /** Needed to ensure items are laid out relative to this container **/
-margin: 0;
+.dealsList {
+	text-align: center;
 }
+	.dealsList .item {
+		background-color: #ffffff;
+		box-shadow: 0px 1px 3px rgba(0,0,0,0.3);	
+		border-radius: 3px;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;	
+		display: inline-block;
+		height: 300px;
+		margin: 15px 10px;
+		overflow: hidden;
+		position: relative;
+		width: 300px;
+	}
+		.dealsList .item .title {
+			bottom: 0px;
+			color: #fff;
+			background: #000;
+			background: rgba(0,0,0,0.65);
+			width: 280px;
+			font-size: 20px;
+			padding: 8px 10px 8px 10px;
+			position: absolute;
+			text-align: left;
+			overflow: hidden;	
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+			.dealsList .item .title .subtitle {
+				font-size: 11px;
+				margin-top: 5px;
+			}
 
-/*
- * Grid items
- */
-#tiles li {
-	width: 300px;
-	background-color: #ffffff;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
-	display: none; /** Hide items initially to avoid a flicker effect **/
-	cursor: pointer;
-	padding: 0px;
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
-	overflow: hidden;
-
+.pagination {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 130%;
+	margin-bottom: 70px;
 }
-#tiles li .block {
+	.pagination .disabled {
+		visibility: hidden;
+	}
+	.pagination a,
+	.pagination .current {
+		padding: 6px 12px 5px 12px;
+		background-color: #ececec;
+		border: 1px solid #cdcdcd;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		color: #5e5e5e;
+		text-shadow: 0px 1px 0px white;
+		text-decoration: none;
+	}
+	.pagination a:hover,
+	.pagination .current {
+		color: #fff;
+		background: #7C2A90;
+		border: 1px solid #7C2A90;
+		text-shadow: none;
+}
+footer {
+	background: #d1d1d1;
+	height: 40px;
 	position: relative;
 }
-#tiles li .block .title{
-	position: absolute;
-	overflow: hidden;
-	white-space: nowrap;
-	bottom: 0px;
-	color: #fff;
-	background: #000;
-	background: rgba(0,0,0,0.65);
-	width: 100%;
-	height: 30px;
-	font-size: 20px;
-	padding: 10px;
-}
-
-#tiles li img {
-	display: block;
-	min-width: 300px;	
-}
-
-/**
- * Grid item text
- */
-#tiles li p {
-color: #666;
-font-size: 12px;
-margin: 7px 0 0 7px;
-}
-
-/**
- * Some extra styles to randomize heights of grid items.
- */
-#tiles ali:nth-child(3n) {
-height: 175px;
-}
-
-#tiles ali:nth-child(4n-3) {
-padding-bottom: 30px;
-}
-
-#tiles ali:nth-child(5n) {
-height: 250px;
-}
+	footer .menu {
+		padding: 10px 0 0 8%;
+	}
+	footer .menu a {
+		font-size: 12px;
+		padding: 10px;
+	}
+	footer .menu a:hover {
+		color: #000;
+	}
