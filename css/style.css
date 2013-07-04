@@ -43,10 +43,9 @@ header .logo {
 }
 	.dropdownMenu.level1 a.level1Link {
 		background: url(../images/dropdown-arrow.png) no-repeat right 12px;	
-		background-color: #D1007C;
-		background-color: rgba(209,0,124,.7);
+		background-color: #C8047D;
 		border-radius: 10px;
-		box-shadow: 1px 1px 2px rgba(0,0,0,.1);
+		box-shadow: 1px 1px 2px rgba(0,0,0,.5);
 		color: #fff;
 		display: block;
 		float: left;	
@@ -144,7 +143,7 @@ header .logo {
 			bottom: 0px;
 			color: #fff;
 			background: #000;
-			background: rgba(0,0,0,0.65);
+			background: rgba(94, 39, 107, 0.7);
 			width: 280px;
 			font-size: 20px;
 			padding: 8px 10px 8px 10px;
@@ -183,7 +182,7 @@ header .logo {
 	.pagination a:hover,
 	.pagination .current {
 		color: #fff;
-		background: #7C2A90;
+		background-color: rgb(204, 30, 137);
 		border: 1px solid #7C2A90;
 		text-shadow: none;
 }
