@@ -40,15 +40,17 @@ h1 {
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;	
 	display: inline-block;
-	height: 300px;
 	margin: 15px 10px;
 	overflow: hidden;
 	position: relative;
-	height: 195px;
 	width: 300px;	
+}
+.citiesList .item img {
+	display: block;
 }
 .citiesList .item .title {
 	font-weight: bold;
+	padding: 5px 0;
 }
 
 .btn {

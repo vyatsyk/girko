@@ -26,7 +26,7 @@
 	}
 		.dealsList .item .title {
 			bottom: 0px;
-			background: rgb(228, 228, 228) url(../images/noise.png) repeat;
+			background: rgb(242, 242, 242) url(../images/noise.png) repeat;
 			width: 280px;
 			font-size: 20px;
 			padding: 10px 10px 8px 10px;
@@ -36,9 +36,20 @@
 			white-space: nowrap;
 			text-overflow: ellipsis;
 		}
-			.dealsList .item .title .subtitle {
+			.dealsList .item .title .phone {
 				font-size: 11px;
 				margin-top: 5px;
+				line-height: 16px;				
+			}
+			.dealsList .item .title .phone .icon {
+				display: inline-block;
+				width: 24px;
+				height: 16px;
+				line-height: 16px;
+				vertical-align: text-top;
+				background-image: url(../images/icons.png);
+				background-position: -47px 0px;
+				background-repeat: no-repeat;
 			}
 
 .pagination {
