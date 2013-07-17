@@ -16,6 +16,11 @@ body {
 }
 header {
 	background: #524751;
+
+	background-image: -moz-linear-gradient(center top, #524751, #3f363e);
+background-image: -o-linear-gradient(top, #524751, #3f363e);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#524751), to(#3f363e));
+
 	box-shadow: 0 1px 3px rgba(0,0,0,.5);
 		-moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
 		-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);	
@@ -41,6 +46,35 @@ header .logo {
 	top: 12px;
 	width: 150px;
 }
+header .account {
+	font-size: 13px;
+	font-weight: bold;
+	position: absolute;
+	right: 0px;
+	top: 13px;
+}
+	header .account a {
+		color: #fff;
+		display: block;
+		float: left;
+		padding: 3px 16px;
+		text-shadow: 1px -1px 0 rgba(0,0,0,0.3);
+		text-decoration: none;	
+	}
+	header .account a:hover {
+		color: #ef97c4;
+	}
+	header .account .reg {
+		border-right: 1px solid #3a3239;
+	}
+	header .account .log {
+		border-left: 1px solid #584d57;
+		border-right: 1px solid #3a3239;
+	}
+	header .account .add {
+		border-left: 1px solid #584d57;
+	}
+
 #content {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -64,7 +98,7 @@ footer {
 	footer .menu a {
 		color: #484848;
 		font-size: 13px;
-		padding: 10px;
+		padding: 10px 15px;
 		text-decoration: none;
 	}
 	footer .menu a:hover {

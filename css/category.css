@@ -75,8 +75,15 @@
 	}
 	.pagination a:hover,
 	.pagination .current {
+
 		color: #fff;
-		background-color: rgb(204, 30, 137);
-		border: 1px solid #7C2A90;
 		text-shadow: none;
+		background-color: #D81B7D;
+		background: -moz-linear-gradient(17deg,#D81B7D 50%,#DF2384 50%);
+		background: -webkit-linear-gradient(72deg,#D81B7D 50%,#DF2384 50%);
+		background: -o-linear-gradient(17deg,#D81B7D 50%,#DF2384 50%);
+		background: linear-gradient(17deg,#D81B7D 50%,#DF2384 50%);
+		text-shadow: 1px -1px 0 rgba(0,0,0,0.3);
+		border: 1px solid rgba(0,0,0,0.2);
+		border-color: #ea1282 #cb1272 #bb0e68 #cb1272;
 }
