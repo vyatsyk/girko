@@ -1,0 +1,56 @@
+#contentBox {
+	background: #f5f5f5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, .35);
+	-moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, .35);
+	-ms-box-shadow: 0px 1px 5px rgba(0, 0, 0, .35);
+	-o-box-shadow: 0px 1px 5px rgba(0, 0, 0, .35);
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, .35);
+	margin: 50px auto;
+	width: 980px;	
+}
+#contentBox .centerCol {
+	float: left;
+	width: 600px;
+}
+#contentBox .leftCol {
+	float: left;
+	width: 300px;
+	padding: 0 0 0 40px;
+}
+.profile {
+
+}
+.profile .divider {
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(255,255,255,0.6)
+}
+.profile h1 {
+	font-size: 28px;
+	font-weight: normal;
+}
+.profile .phone {
+
+	font-size: 18px;
+	line-height: 140%;
+}
+.profile .email {
+	font-size: 18px;
+	line-height: 140%;
+}
+.profile .adress {
+	font-size: 18px;
+	line-height: 140%;
+}
+.profile .adress img {
+	margin-top: 10px;
+	max-width: 100%
+}
+.profile .descr {
+	color: #777;
+	font-size: 13px;
+	margin: 20px 0 20px 0;
+}
